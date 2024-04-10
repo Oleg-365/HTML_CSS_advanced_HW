@@ -1,0 +1,158 @@
+.header {
+  min-height: 100px;
+  border-bottom: 1px solid #ececec;
+  & > .container {
+    min-height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__left,
+  &__right {
+    height: 38px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  &__right {
+    position: relative;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  &__name {
+    margin-left: 12px;
+    margin-right: 37px;
+    text-transform: uppercase;
+    font-size: 27px;
+    font-family: Lato;
+    font-size: 27px;
+    line-height: 32px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    color: #222222;
+    span {
+      color: $maincolor;
+      font-weight: 900;
+    }
+  }
+}
+
+.search {
+  border-radius: 3px;
+  border: 1px solid #e6e6e6;
+  height: 38px;
+  display: flex;
+  align-content: center;
+  & > .search__browse {
+    position: relative;
+    width: 87px;
+    height: inherit;
+    border-radius: 3px 0 0 3px;
+    background-color: #d6d6d62e;
+    text-align: center;
+    font-size: 14px;
+    line-height: 32px;
+    //letter-spacing: 0.35px;
+    font-family: Lato;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+    color: #222222;
+    cursor: pointer;
+    line-height: 38px;
+    transition: background-color 0.3s ease-in-out;
+    &:hover {
+      background-color: #a4a4a423;
+    }
+    i {
+      margin-left: 5px;
+      color: #838383;
+    }
+  }
+
+  &__input {
+    width: 280px;
+    padding: 0 15px;
+    outline: none;
+    border: none;
+    border-right: 1px solid #e6e6e6;
+    border-left: 1px solid #e6e6e6;
+    font-size: 14px;
+    letter-spacing: 0.35px;
+    &::placeholder {
+      color: #a4a4a4bb;
+      font-size: 14px;
+      font-weight: 300;
+      letter-spacing: 0.65px;
+    }
+  }
+  &__button {
+    width: 38px;
+    outline: none;
+    overflow: hidden;
+    border: none;
+    cursor: pointer;
+    color: #a4a4a4;
+    background-color: $colorRegul;
+    transition: background-color 0.3s ease-in-out;
+    &:hover {
+      background-color: #a4a4a423;
+    }
+  }
+}
+
+.cart {
+  position: relative;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 26px;
+  img {
+    width: 32px;
+    height: 29px;
+    transform: rotate(0);
+    transition: transform 2s cubic-bezier(1, -0.21, 0, 1.33);
+    &:hover {
+      transform: rotate(360deg);
+    }
+    &:active {
+      animation-duration: 2s;
+      animation-name: myanim;
+    }
+  }
+}
+.my-account {
+  height: 38px;
+  width: 130px;
+  display: flex;
+  align-content: center;
+  //position: relative;
+  background-color: #f16d7f;
+  //margin-left: 26px;
+  &:hover {
+    background-color: $colorRegul;
+    color: $maincolor;
+    outline: 1px solid $maincolor;
+  }
+  & > a {
+    height: inherit;
+    background-color: $maincolor;
+    text-align: center;
+    font-family: Lato;
+    font-size: 15px;
+    line-height: 32px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+
+    transition: all 0.3s ease-in-out;
+  }
+
+  i {
+    margin-left: 5px;
+  }
+}

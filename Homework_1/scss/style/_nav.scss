@@ -1,0 +1,22 @@
+.top-nav {
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  gap: 50px;
+}
+
+.menu-link {
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222222;
+  margin-top: 19px;
+  margin-bottom: 22px;
+  &:hover {
+    color: #f16d7f;
+  }
+}
