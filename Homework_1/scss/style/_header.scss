@@ -125,34 +125,29 @@
     }
   }
 }
+
 .my-account {
   height: 38px;
-  width: 130px;
   display: flex;
   align-content: center;
-  //position: relative;
-  background-color: #f16d7f;
-  //margin-left: 26px;
-  &:hover {
-    background-color: $colorRegul;
-    color: $maincolor;
-    outline: 1px solid $maincolor;
-  }
+  position: relative;
   & > a {
+    width: 130px;
     height: inherit;
     background-color: $maincolor;
     text-align: center;
-    font-family: Lato;
+    color: $colorRegul;
     font-size: 15px;
-    line-height: 32px;
-    font-weight: 400;
-    letter-spacing: 0.025em;
-    color: #ffffff;
-
+    letter-spacing: 0.38px;
+    line-height: 38px;
     transition: all 0.3s ease-in-out;
-  }
-
-  i {
-    margin-left: 5px;
+    &:hover {
+      background-color: $colorRegul;
+      color: $maincolor;
+      outline: 1px solid $maincolor;
+    }
+    i {
+      margin-left: 5px;
+    }
   }
 }

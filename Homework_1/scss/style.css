@@ -169,29 +169,27 @@ a {
 
 .my-account {
   height: 38px;
-  width: 130px;
   display: flex;
   align-content: center;
-  background-color: #f16d7f;
+  position: relative;
 }
-.my-account:hover {
+.my-account > a {
+  width: 130px;
+  height: inherit;
+  background-color: #f16d7f;
+  text-align: center;
+  color: #ffffff;
+  font-size: 15px;
+  letter-spacing: 0.38px;
+  line-height: 38px;
+  transition: all 0.3s ease-in-out;
+}
+.my-account > a:hover {
   background-color: #ffffff;
   color: #f16d7f;
   outline: 1px solid #f16d7f;
 }
-.my-account > a {
-  height: inherit;
-  background-color: #f16d7f;
-  text-align: center;
-  font-family: Lato;
-  font-size: 15px;
-  line-height: 32px;
-  font-weight: 400;
-  letter-spacing: 0.025em;
-  color: #ffffff;
-  transition: all 0.3s ease-in-out;
-}
-.my-account i {
+.my-account > a i {
   margin-left: 5px;
 }
 
@@ -201,7 +199,7 @@ a {
   background-color: #ffffff;
   font-size: 14px;
   font-weight: bold;
-  gap: 50px;
+  gap: 45px;
 }
 
 .menu-link {
