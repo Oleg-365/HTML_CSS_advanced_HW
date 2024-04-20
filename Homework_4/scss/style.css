@@ -296,6 +296,7 @@ a {
   position: unset;
 }
 .cart__menu-btn {
+  position: relative;
   width: 100%;
   height: 50px;
   background-color: #ffffff;
@@ -314,6 +315,27 @@ a {
 .cart:hover > .cart__menu {
   height: auto;
   overflow: visible;
+}
+
+.cart__menu-btn-link {
+  background-color: #ffffff;
+  color: #f16d7f;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: all 0.2s;
+}
+.cart__menu-btn-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.cart__menu-btn-link:hover {
+  color: #ffffff;
+  background-color: #f16d7f;
 }
 
 .my-account {
@@ -1148,14 +1170,31 @@ a {
   letter-spacing: normal;
   line-height: normal;
 }
-.crumps nav {
-  color: #636363;
+
+.bredcrumbs__ul {
+  list-style-type: none;
+  display: flex;
+}
+.bredcrumbs__li:not(:last-child)::after {
+  content: "/";
+  padding-left: 4px;
+  padding-right: 4px;
+  font-style: normal;
+  font-weight: 300;
   font-size: 14px;
   text-transform: uppercase;
+  color: #636363;
 }
-.crumps nav span {
-  color: #f16d7f;
+.bredcrumbs__link {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #636363;
+}
+.bredcrumbs__li:last-child .bredcrumbs__link {
   font-weight: 700;
+  color: #f16d7f;
 }
 
 .slider {

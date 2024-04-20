@@ -21,13 +21,42 @@
     letter-spacing: normal;
     line-height: normal;
   }
-  nav {
-    color: #636363;
+  // nav {
+  //   color: #636363;
+  //   font-size: 14px;
+  //   text-transform: uppercase;
+  //   span {
+  //     color: #f16d7f;
+  //     font-weight: 700;
+  //   }
+  // }
+}
+
+.bredcrumbs {
+  &__ul {
+    list-style-type: none;
+    display: flex;
+  }
+  &__li:not(:last-child)::after {
+    content: "/";
+    padding-left: 4px;
+    padding-right: 4px;
+    font-style: normal;
+    font-weight: 300;
     font-size: 14px;
     text-transform: uppercase;
-    span {
-      color: #f16d7f;
-      font-weight: 700;
-    }
+    color: #636363;
+  }
+
+  &__link {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #636363;
+  }
+  &__li:last-child .bredcrumbs__link {
+    font-weight: 700;
+    color: #f16d7f;
   }
 }
