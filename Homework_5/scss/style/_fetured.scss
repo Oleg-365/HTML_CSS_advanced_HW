@@ -1,0 +1,157 @@
+.item-sec {
+  margin-top: 100px;
+}
+
+.item-sec-title {
+  font-family: Lato;
+  font-size: 30px;
+  line-height: 54px;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  color: $textColor;
+  text-align: center;
+}
+
+.item-sec-dsc {
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 54px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  color: #9f9f9f;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.item-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.item {
+  width: 263px;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.item:hover {
+  box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
+}
+
+.item:hover .add-box {
+  display: flex;
+  justify-content: center;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.item:hover .item-pic {
+  filter: brightness(30%);
+}
+
+.item-link {
+  display: block;
+  width: 263px;
+  text-decoration: none;
+}
+
+.item-pic {
+  width: 100%;
+}
+
+.txt-box {
+  padding: 20px;
+}
+
+.item-dsc {
+  font-family: Lato;
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $textColor;
+  margin-bottom: 17px;
+}
+
+.item-price {
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $maincolor;
+}
+
+.add-box {
+  position: absolute;
+  top: 98px;
+  display: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  pointer-events: none;
+}
+.add-box-1 {
+  display: flex;
+}
+
+.add {
+  display: flex;
+  padding: 10px;
+  font-family: Lato;
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: $colorRegul;
+  border: 1px solid #fff;
+  text-decoration: none;
+  align-items: center;
+  pointer-events: all;
+}
+
+.add-img {
+  width: 57px;
+  height: 38px;
+  padding-left: 18px;
+}
+
+.add:hover {
+  box-shadow: 0 0 10px 0 #fff;
+}
+
+.add-pic {
+  margin-right: 10px;
+}
+
+.fetured__allProduct {
+  width: 212px;
+  height: 48px;
+  background-color: $maincolor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 59px auto 112px;
+  & > a {
+    color: $colorRegul;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 48px;
+    width: inherit;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    transition: all 0.3s ease-in;
+    &:hover {
+      background-color: $colorRegul;
+      color: $maincolor;
+      outline: 1px solid $maincolor;
+    }
+    & > i {
+      font-size: 20px;
+      padding-left: 9px;
+      line-height: 48px;
+    }
+  }
+}
