@@ -863,9 +863,9 @@ a {
 .offer__seller img {
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: center;
-     object-position: center;
+  object-position: center;
 }
 .offer__seller p {
   position: absolute;
@@ -947,9 +947,9 @@ a {
   height: 86px;
   border-radius: 50px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: top;
-     object-position: top;
+  object-position: top;
   margin-right: 28px;
   margin-top: 111px;
 }
@@ -1704,9 +1704,9 @@ a {
   width: 100px;
   height: 117px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: top;
-     object-position: top;
+  object-position: top;
   transition: transform 1s ease-in-out;
 }
 .basket__block-product img:hover {

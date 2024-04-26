@@ -6,7 +6,11 @@
   background-position: 72% 0;
   & > .container {
     height: inherit;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
   &__title {
@@ -27,3 +31,33 @@
     }
   }
 }
+
+// .brand {
+//   height: 612px;
+//   background-color: #e8e8e8;
+//   background-image: url("../img/topHeaderBack.png");
+//   background-repeat: no-repeat;
+//   background-position: 72% 0;
+//   & > .container {
+//     height: inherit;
+//     display: flex;
+//     align-items: center;
+//   }
+//   &__title {
+//     line-height: 48px;
+//     font-size: 60px;
+//     font-weight: 900;
+//     text-transform: uppercase;
+//     letter-spacing: 1.5px;
+//     border-left: 12px solid #f26d80;
+//     padding-left: 12px;
+//     span {
+//       font-size: 40px;
+//       letter-spacing: 0.9px;
+//       line-height: 32px;
+//       &:last-child {
+//         color: $maincolor;
+//       }
+//     }
+//   }
+// }
